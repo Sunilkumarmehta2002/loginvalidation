@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Validation</title>
+	 <style type="text/css">
+	 	html{
+	 		background-color:mediumaquamarine;
+	 		background-image: url('https://media.giphy.com/media/MdjSJLgFazKE6Sc6OO/giphy.gif');
+	 		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	    	border-radius: 10px;
+
+	 	}
+	 	body{
+	 		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	    	border-radius: 10px;
+	    	background-color:rgba(0,0,0,0.1);
+
+	 	}
+	 	input{
+	 		align-items: center;
+	 		background-color:aqua;
+	 		box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	    	border-radius: 10px;
+
+
+
+
+	 	}
+	    button{
+	    	background-color: inherit;
+	    	align-items: center;
+	    	border-radius: 10px;
+	    	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+
+	    }
+	    form{
+	    	border-radius: 10px;
+	    	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+
+
+	    }
+
+	 </style>
+</head>
+<body>
+	<h2>Tobacco and its impact on environment</h2>
+	<h4>Login page</h4>
+	<form> 
+		Email:<input type="text" id="email" placeholder="Enter email"><br>
+		Passward:<input type="password" id="password" placeholder="Enter password"><br>
+		<button type="button" id="btn">Login</button>
+
+	</form>
+
+
+	<script>
+		var emailEntered = document.getElementById('email');
+		var passEntered = document.getElementById('password');
+		var button = document.getElementById('btn');
+
+		button.addEventListener("click",function(){
+			var email = emailEntered.value;
+			var pass = passEntered.value;
+			var correctEmail = "mehtasunilkumar69@gmail.com";
+			var correctPass = "123456";
+
+			if (email === correctEmail && pass === correctPass){
+				window.open("https://sunilkumarmehta2002.github.io/CHE110/");
+			}
+			else{
+				alert("wrong password")
+			}
+
+		});
+	</script>
+	
+</body>
+</html>
